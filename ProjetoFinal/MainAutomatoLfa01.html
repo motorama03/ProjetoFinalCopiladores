@@ -1,0 +1,49 @@
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(122, 118, 118));
+    text-align: center;
+    }
+    .Centroform{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .body{
+        background-image: linear-gradient(rgb(244, 250, 244), rgb(146, 146, 146));
+        text-align: center;
+    }
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: rgb(255, 255, 255, 0.6);
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        width: 35%;
+    }
+    .inputbox{
+        position: relative;
+        text-align: center;
+    }
+    .errado{
+        text-decoration: red;
+    }
+    .span-required{
+        font-size: 12px;
+        margin: 3px 0 0 1px;
+        color: var(--color-red);
+        display: none;
+    }
+</style>
+<DOCKTYPE html>
+    <head></head>
+    <body>
+        <form method="POST" action="Main.php">
+            <label for="palavra">Palavra:</label><br>
+            <textarea type="text" name="palavra" id="palavra"></textarea><br>
+            <button type="submit">Verificar</button>
+        </form>
+    </body>
+</DOCKTYPE>
